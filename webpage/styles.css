@@ -15,7 +15,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #cafdff;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 16px;
 }
 
 a{
@@ -26,11 +26,11 @@ a{
 
 header{
     background-color: #eafdff;
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px;
+    padding: 20px;
 }
 
 h1{
@@ -46,7 +46,7 @@ button{
     background-color: aqua;
     border: none;
     color: white;
-    padding: 8px 16px;
+    padding: 8px 8px;
     font-size: 24px;
     cursor: pointer;
 }
@@ -67,8 +67,7 @@ li{
 
 .row{
     width: 100%;
-    max-width: 1800px;
-    margin: 0 auto;
+    max-width: 1300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,6 +105,7 @@ h2{
 
 img{
     width: 100%;
+    border-radius: 4px;
 }
 
 .section__description--wrapper{
@@ -137,10 +137,11 @@ form{
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea{
-      margin: 24px;
+      margin-bottom: 24px;
       font-size: 20px;
       padding: 6px 12px;
 }
@@ -169,7 +170,7 @@ footer{
 
 /* Small Phones Tablets and Large Smartphones */
 
-@media (maxwidth: 728px){
+@media (max-width: 728px){
     .row{
         flex-direction: column;
     }
@@ -178,6 +179,7 @@ footer{
         margin-bottom: 24px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     h1{
@@ -187,6 +189,49 @@ footer{
 
     .subheader{
         text-align: center;
-        font-size: 28px;
+        font-size: 28px;   
     }
+
+    .home__description-button{
+        max-width: 240px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .section__description{
+        flex-direction: column;
+    }
+
+    .section__description--wrapper{
+        width: 100%;
+    }
+
+    .about__img--wrapper{
+        width: 100%;
+    }
+
+    #discord .section__description{
+        flex-direction: column-reverse;
+    }
+
+    footer{
+        padding: 48px 24px;
+    }
+
+    .footer__logo{
+        max-width: 360px;
+    }
+
+    .footer__link{
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    .footer__links{
+        margin-bottom: 24px;
+    }
+
+
 }
